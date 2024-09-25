@@ -33,7 +33,7 @@ async def main():
                 if not data:
                     raise Exception('⛔ JSON does not have a "data" property at its root.')
 
-                download_dir = os.path.join(os.getcwd(), 'downloads')
+                download_dir = os.path.join(os.getcwd(), 'pydownloads')
                 if not os.path.exists(download_dir):
                     os.makedirs(download_dir)
                     print(f"📁 Created directory: {download_dir}")
@@ -68,7 +68,7 @@ def ascii_art():
 | $$ \\/  | $$| $$ \\  $$| $$$$$$$/|  $$$$$$/| $$$$$$$/
 |__/     |__/|__/  \\__/|_______/  \\______/ |_______/""")
     print("")
-    print("🤑 Starting downloads from your favorite sellout grifter's wallpaper app...")
+    print("🤑 Starting pydownloads from your favorite sellout grifter's wallpaper app...")
 
 if __name__ == "__main__":
     ascii_art()
